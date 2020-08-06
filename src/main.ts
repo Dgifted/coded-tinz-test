@@ -1,6 +1,5 @@
-import app from './main';
+import { Setup } from './setup';
 
-app.get('/:x/:y', (req, res) => {
-    let sum = +req.params.x + +req.params.y;
-    res.send(sum.toString());
-});
+let setUp = new Setup();
+
+setUp.endPoint();
